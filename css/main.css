@@ -3,7 +3,7 @@
 }*/
 
 body{}
- 
+
 .row {
 
   max-width: 1000px;
@@ -121,12 +121,18 @@ body{}
 
 }
 
-.answer-evaluator h1, h2 , p {
+.answer-evaluator h1, h2 {
 
 	text-align: center;
   font-size: 100px;
 
 }
+
+.answer-evaluator p{
+  font-size: 40px;
+}
+
+
 
 .answer-evaluator button {
 
@@ -143,24 +149,26 @@ body{}
 .result-box h1, h2 , p , h3 {
 
 	text-align: center;
-  font-size: 60px;
+  font-size: 70px;
 	
 
 }
 
 .result-box button {
 
-	width:340px;
-   height: 100px;
-    border-radius: 4px;
-     margin-right:auto ;
-    margin-left: auto;
+	width:800px;
+   height: 200px;
+    border-radius: 4px;    
    	margin-top: 50px;
-  	margin-left: 125px;
   	margin-bottom:10px;
+    font-size: 50px;
   	display: none;
 
 }
+
+
+
+/*=----------------------STARTING MEDIA QUIERY    ----------------------------------------*/
 
 @media only screen and (min-width: 1024px) {
 
@@ -268,7 +276,10 @@ body{}
 
   text-align: center;
   font-size: 20px;
+}
 
+.answer-evaluator p{
+  font-size: 20px;
 }
 
 .answer-evaluator button {
