@@ -92,16 +92,16 @@ h1, h2, h3 {
 	padding-top: 25px;
 	padding-bottom: 25px;
 	display: inline-block;
-   font-size: 40px;
-
+   font-size: 35px;
+   color: white;
 }
 
 .question-choice {
 
-    border:1px solid black;
+   border: 2px solid #ffb366 ;
     max-width: 1000px;
-    height: 160px;
-    background-color:#66b3ff;
+    height: 180px;
+  background-color:#ff4d4d;
     border-radius: 4px;
     margin-bottom:10px;
     margin-right: 30px;
@@ -115,31 +115,35 @@ h1, h2, h3 {
 
 
 .question-choice:hover {
-	  background-color: #ff4d4d;
+  background-color: #c92728;
 }
-.not-selected{
-	background-color: blue;
-}
+
 .selected {
-  border:4px solid #ffb366  ;
-	background-color:#862d86;
+  border:10px solid #ffb366;
+  background-color:#c92728;
 }
+
+
 
 .question-box{
 	display: none;
 }
 
 .submit-button {
-	border:1px solid black;
+	 border:1px solid #ffb366;
     max-width: 1000px;
     height: 130px;
-    background-color:#00e673;
+     background-color:#00e673;
     border-radius: 4px;
+    margin-top: 30px;
     margin-bottom:10px;
     display: none;
     margin-right:30px;
     font-size: 50px;
     font-family: 'Nunito', sans-serif;
+    color:white;
+    text-align: center;
+    padding-top: 60px;
 }
 
 .submit-button:hover{
@@ -147,10 +151,14 @@ h1, h2, h3 {
 
 }
 
-.answer-evaluator h1, h2 {
+.answer-evaluator {
+  display: none;
+}
+
+.answer-evaluator h1, h2 ,h4 {
 
 	text-align: center;
-  font-size: 100px;
+  font-size: 60px;
 
 }
 
@@ -192,6 +200,7 @@ h1, h2, h3 {
     font-size: 50px;
   	display: none;
     font-family: 'Nunito', sans-serif;
+    background-color:#00e673;
 
 }
 
@@ -295,7 +304,7 @@ h1, h2, h3 {
 }
 
 .submit-button{
-  border:1px solid #ffb366;
+    border:1px solid #ffb366;
     width: 500px;
     height: 60px;
     background-color:#00e673;
@@ -314,10 +323,20 @@ h1, h2, h3 {
 
 }
 
-.answer-evaluator h1, h2 , p {
+.answer-evaluator {
+  display: none;
+}
+
+.answer-evaluator h1, h2 , p, h4 {
 
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
+
+
+}
+
+.answer-evaluator h1{
+  font-size: 40px;
 }
 
 .answer-evaluator p{
@@ -334,7 +353,6 @@ h1, h2, h3 {
     margin-top: 50px;
     margin-left: 125px;
     margin-bottom:10px;
-    display: none;
     font-size: 30px;
     background-color:#00e673;
     font-family: 'Nunito', sans-serif;
@@ -349,8 +367,9 @@ h1, h2, h3 {
 .result-box h1, h2 , p ,h3 {
 
   text-align: center;
-  font-size: 20px;
-  
+  font-size: 30px;
+  margin-bottom: 20px;
+
 
 }
 
@@ -367,7 +386,7 @@ h1, h2, h3 {
     display: none;
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
-    background-color: background-color:#00e673;
+    background-color:#00e673;
 
 }
 

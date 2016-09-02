@@ -8,8 +8,10 @@
 
 
     $('.welcome').fadeOut(500, function(){
-      $('.welcome').hide();
-      $('.question-box').show();
+      $('.welcome').hide(0 , function(){
+         $('.question-box').show();
+      });
+     
 
     })
 		
@@ -18,6 +20,7 @@
 
 		if(question_number == 1) {
 		current_question(question_1.question,question_1.choice_A,question_1.choice_B,question_1.choice_C,question_1.choice_D,question_1.choice_E);
+
 
 	} 
 
@@ -68,12 +71,16 @@
 
         $('.question-box').hide( 0, function(){
 
-          $('.answer-evaluator').show();
           $('.answer-evaluator button').show();
 
-        });
+            $('.answer-evaluator').fadeIn(300,function(){
 
-        
+              $('.answer-evaluator').show();
+               
+
+            })
+          
+        });
 
       })
 
@@ -138,7 +145,7 @@
 
        		if( selected==correct){	
 
-       			$('.answer-evaluator h1').text('Correct!');
+       			$('.answer-evaluator h1').text('CORRECT!').css('color','#009933');
 
        			points=10 ;
        			console.log( 'you have now :' + points + 'points');
@@ -147,22 +154,22 @@
 
        			else if (selected==good ){ 
 
-       				$('.answer-evaluator h1').text('You were close!');
+       				$('.answer-evaluator h1').text('You were close!').css('color','#60ea60');
        				points=5}
 
        				else if (selected==okay){
-       					$('.answer-evaluator h1').text('Not quite')
+       					$('.answer-evaluator h1').text('Not quite').css('color','#ff9933')
        					points=3}
 
        					else {
 
-       						$('.answer-evaluator h1').text('Sorry, wrong answer :( !')
+       						$('.answer-evaluator h1').text('Sorry, wrong answer :( !').css('color','#ff4d4d')
        						points=0
        					}
        			 
        		
-
-          $('.answer-evaluator h2').text('The Right Answer was: '+correct+ '!')
+           $('.answer-evaluator h2').text('The right answer was: ')   
+          $('.answer-evaluator h4').text(correct + '!')
 
           $('.answer-evaluator p').text(explanation)
 
@@ -242,7 +249,10 @@
 									    	$('.result-box button').show();
 
 									    	$('.result-box h1').text('Congratulations! You finished this weird quiz!! ');
-									    	$('.result-box h2').text('Your total score was :'+ totalPoints );
+
+									    	$('.result-box h2').text('Your total score was : '+ totalPoints );
+
+                        //......GRading feature...///
 									    	
     								}
 
