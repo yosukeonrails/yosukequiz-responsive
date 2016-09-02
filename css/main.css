@@ -108,7 +108,7 @@ body{}
 	border:1px solid black;
     max-width: 1000px;
     height: 130px;
-    background-color: green;
+    background-color: #7FD162;
     border-radius: 4px;
     margin-bottom:10px;
     display: none;
@@ -196,6 +196,7 @@ body{}
     margin-left: 125px;
     margin-bottom:10px;
     font-size: 30px;
+    background-color:#7FD162;
 }
 
 .welcome h1,h2 {
@@ -260,7 +261,7 @@ body{}
   border:1px solid black;
     width: 500px;
     height: 60px;
-    background-color: green;
+    background-color:#7FD162;
     border-radius: 4px;
     margin-bottom:10px;
     font-size: 30px;
