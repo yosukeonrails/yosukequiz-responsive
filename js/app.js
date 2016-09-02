@@ -6,9 +6,15 @@
 
 	$('.welcome button').click(function(){
 
-		$('.welcome').hide();
 
-		$('.question-box').show();
+    $('.welcome').fadeOut(500, function(){
+      $('.welcome').hide();
+      $('.question-box').show();
+
+    })
+		
+
+		
 
 		if(question_number == 1) {
 		current_question(question_1.question,question_1.choice_A,question_1.choice_B,question_1.choice_C,question_1.choice_D,question_1.choice_E);
@@ -58,12 +64,25 @@
 			event.preventDefault();
 
 
+      $('.question-box').fadeOut(300, function(){
 
-			$('.question-box').hide();
+        $('.question-box').hide( 0, function(){
 
-			$('.answer-evaluator').show();
+          $('.answer-evaluator').show();
+          $('.answer-evaluator button').show();
 
-			$('.answer-evaluator button').show();
+        });
+
+        
+
+      })
+
+
+			
+
+			
+
+		
 
 
        			if(question_number==1){
@@ -117,7 +136,7 @@
       
 
 
-       		if(selected==correct){	
+       		if( selected==correct){	
 
        			$('.answer-evaluator h1').text('Correct!');
 
@@ -143,7 +162,7 @@
        			 
        		
 
-          $('.answer-evaluator h2').text('The Right Answer was:'+correct+ '!')
+          $('.answer-evaluator h2').text('The Right Answer was: '+correct+ '!')
 
           $('.answer-evaluator p').text(explanation)
 

@@ -24,7 +24,7 @@
 
    	var question_3= {
 
-   		question:' What was the name of Yosuke’s former band?',
+   		question:' What was the name of Yosuke\'s former band?',
    		choice_A:'The Robber Ducks',
    		choice_B:'Kind of Blind',
    		choice_C:'The Young Grandmas',
@@ -50,7 +50,7 @@
    	
    	var question_5= {
 
-   		question:' What is Yosuke’s favorite Christian band?',
+   		question:' What is Yosuke\'s favorite Christian band?',
    		choice_A:'Hillsong United',
    		choice_B:'Chris Tomlin',
    		choice_C:'Newsboys',
