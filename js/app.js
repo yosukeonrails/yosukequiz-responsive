@@ -253,6 +253,106 @@
 									    	$('.result-box h2').text('Your total score was : '+ totalPoints );
 
                         //......GRading feature...///
+
+                        var letter_grade;
+
+                        if(totalPoints == 100 ){
+
+                          letter_grade= 'A++'
+                          $('.grade').css('color','#80d4ff')
+
+                        } else if (
+                          totalPoints >= 95){
+
+                          letter_grade= 'A+'
+                          $('.grade').css('color','#4dffdb')
+
+                        }
+
+                        else if (
+                          totalPoints >= 90){
+
+                          letter_grade= 'A-'
+                         $('.grade').css('color','#00ff99')
+
+                        }
+
+                        else if (
+                          totalPoints >= 85){
+
+                          letter_grade= 'B+'
+                         $('.grade').css('color','#00e673')
+
+                        }
+
+                        else if (
+                          totalPoints >= 80){
+
+                          letter_grade= 'B-'
+
+                        $('.grade').css('color','#00b359')
+
+                        }
+
+                        else if (
+                          totalPoints >= 75){
+
+                          letter_grade= 'C+'
+
+                         $('.grade').css('color','#bfff80')
+
+                        }
+
+                        else if (
+                          totalPoints >= 70){
+
+                          letter_grade= 'C-'
+
+                         $('.grade').css('color','#ffff99')
+
+                        }
+
+                        else if (
+                          totalPoints >= 65){
+
+                          letter_grade= 'D+'
+
+                         $('.grade').css('color','#ffcc66')
+
+                        }
+
+                        else if (
+                          totalPoints >= 50){
+
+                          letter_grade= 'D-'
+
+                         $('.grade').css('color','#ff9966')
+
+                        }
+
+                        else if (
+                          totalPoints >= 45){
+
+                          letter_grade= 'F'
+
+                         $('.grade').css('color','#999966')
+
+                        }
+
+                        else if (
+                          totalPoints < 45){
+
+                          letter_grade= 'F'
+
+                         $('.grade').css('color','#999966')
+
+                        }
+
+                        $('.result-box p').text('Your Final Grade is :')
+                        $('.grade').text(letter_grade)
+
+
+
 									    	
     								}
 
